@@ -15,6 +15,7 @@ https://googleapis.dev/python/bigquery/latest/generated/google.cloud.bigquery.cl
 def create_client(project_id):
     return bigquery.Client(project=project_id)
 
+
 def load_data(dataset_id, table_name, gsuri):
     # Initialize a BigQuery Client
     client = bigquery.Client()
@@ -170,7 +171,8 @@ def write_truncate(dataset_id, table_name, gsuri):
 
 client = create_client('justlikethat')
 
-gsurls=list_blobs_with_prefix('bigquery_tarams','2019',None)
+# gsurls = list_blobs_with_prefix('bigquery_tarams', '2019', None)
+gsurls = list_blobs_with_prefix('tarams_new', '2019', None)
 
 print(gsurls)
 

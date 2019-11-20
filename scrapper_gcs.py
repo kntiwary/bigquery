@@ -155,10 +155,11 @@ def list_blobs_with_prefix(bucket_name, prefix, delimiter=None):
     return urls
 
 # list_blobs_with_prefix('bigquery_tarams','2019/November/18',None)
-gsurls=list_blobs_with_prefix('bigquery_tarams','2019',None)
+# gsurls=list_blobs_with_prefix('bigquery_tarams','2019',None)
+# gsurls=list_blobs_with_prefix('tarams_new','2019',None)
 # get_bucket_info('bigquery_tarams')
 # implicit()# List buckets
-# upload_file('bigquery_tarams', 'mathematician2.csv', 'another3.csv')
+upload_file('tarams_new', 'mathematician2.csv', 'new.csv')
 # print(datetime.datetime.now().year)
 # print(datetime.datetime.now().strftime("%B"))
 # print(datetime.datetime.now().day)
